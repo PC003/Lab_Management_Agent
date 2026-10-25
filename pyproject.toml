@@ -1,0 +1,25 @@
+[project]
+name = "lab-management-agent"
+version = "0.1.0"
+description = "Pathology Laboratory Management System Agent using LangGraph"
+readme = "README.md"
+authors = [
+    { name = "PC003", email = "piyushchavan003@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.4.1",
+    "langchain>=0.3.0",
+    "langchain-google-genai>=2.1.0",
+    "langchain-core>=0.3.0",
+    "python-dotenv>=1.0.0",
+    "langchain-groq>=1.1.3",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+lab-management-agent = "lab_management_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
